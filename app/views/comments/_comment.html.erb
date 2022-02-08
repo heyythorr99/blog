@@ -8,9 +8,11 @@
   <%= comment.body %>
 </p>
 
-<p>
+
+<a class="btn btn-danger">
   <%= link_to "Destroy Comment", [comment.article, comment], data: {
                 turbo_method: :delete,
                 turbo_confirm: "Are you sure?"
               } %>
-</p>
+              </a>
+
